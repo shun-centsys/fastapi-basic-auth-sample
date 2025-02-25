@@ -1,0 +1,19 @@
+[project]
+name = "basic-auth-sample"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "shun", email = "141094180+shun-centsys@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.115.8",
+]
+
+[project.scripts]
+basic-auth-sample = "basic_auth_sample:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
